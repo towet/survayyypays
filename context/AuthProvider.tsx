@@ -85,13 +85,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const requiresAuth = isProtectedRoute(segments);
     
     if (requiresAuth && !isAuthenticated && !isLoading) {
-      // Redirect to login if trying to access protected route without auth
-      router.replace('/auth/login');
-    } else if (!requiresAuth && isAuthenticated) {
-      // Redirect to home if trying to access auth routes while already authenticated
-      if (segments[0] === 'auth') {
-        router.replace('/(tabs)');
-      }
+      // Redirect to signup if trying to access protected route without auth
+      router.replace('/auth/signup');
+    } else if (isAuthenticated && (segments[0] === 'auth' || segments[0] === 'onboarding')) {
+      // Redirect to home if trying to access auth or onboarding routes while already authenticated
+      router.replace('/(tabs)');
     }
   }, [segments, isAuthenticated, isLoading, isInitialized]);
   
