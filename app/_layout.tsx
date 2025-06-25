@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import Script from 'next/script';
 import { View } from 'react-native';
 import { useFrameworkReady } from '@/hooks/useFrameworkReady';
 import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold, Poppins_700Bold } from '@expo-google-fonts/poppins';
@@ -55,23 +54,6 @@ export default function RootLayout() {
 
   return (
     <AuthProvider>
-      {/* --- Google Ads Tag START --- */}
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=AW-17071627570"
-      />
-      <Script
-        id="google-ads-config"
-        strategy="afterInteractive"
-      >
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-17071627570');
-        `}
-      </Script>
-      {/* --- Google Ads Tag END --- */}
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="splash" options={{ animation: 'fade' }} />
         <Stack.Screen name="auth" options={{ animation: 'fade' }} />
