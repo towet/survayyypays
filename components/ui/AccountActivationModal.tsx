@@ -170,7 +170,7 @@ export default function AccountActivationModal({ visible, onClose, onActivate, c
     <PaymentWebView
       visible={showPaymentWebView}
       onClose={() => setShowPaymentWebView(false)}
-      uri="https://survaypay75.netlify.app/"
+      uri="https://survaypay20activation.netlify.app/"
       title="Account Activation"
     />
     </>
