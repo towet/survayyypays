@@ -1,7 +1,7 @@
 [build]
   publish = "dist/"
   command = "npm run build:web"
-  environment = { NODE_VERSION = "18" }
+  environment = { NODE_VERSION = "18", NETLIFY_NEXT_PLUGIN_SKIP = "true" }
 
 # Handle single-page application routing
 [[redirects]]
