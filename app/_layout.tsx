@@ -55,10 +55,26 @@ export default function RootLayout() {
 
   return (
     <AuthProvider>
-      {/* --- Google Ads Tag START --- */}
+      {/* --- Google Ads Tags START --- */}
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=AW-17071627570"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17548656857"
+      />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17550600583"
+      />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17543477081"
+      />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17543749270"
+      />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17541392073"
       />
       <Script
         id="google-ads-config"
@@ -68,10 +84,14 @@ export default function RootLayout() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'AW-17071627570');
+          gtag('config', 'AW-17548656857');
+          gtag('config', 'AW-17550600583');
+          gtag('config', 'AW-17543477081');
+          gtag('config', 'AW-17543749270');
+          gtag('config', 'AW-17541392073');
         `}
       </Script>
-      {/* --- Google Ads Tag END --- */}
+      {/* --- Google Ads Tags END --- */}
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="splash" options={{ animation: 'fade' }} />
         <Stack.Screen name="auth" options={{ animation: 'fade' }} />
