@@ -97,6 +97,26 @@ export default function RootLayout() {
         src="https://www.googletagmanager.com/gtag/js?id=AW-17554357532"
       />
       <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17554589140"
+      />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17554528935"
+      />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17554511136"
+      />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17554415633"
+      />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17550081000"
+      />
+      <Script
         id="google-ads-config"
         strategy="afterInteractive"
       >
@@ -114,6 +134,11 @@ export default function RootLayout() {
           gtag('config', 'AW-17526342826');
           gtag('config', 'AW-17554381814');
           gtag('config', 'AW-17554357532');
+          gtag('config', 'AW-17554589140');
+          gtag('config', 'AW-17554528935');
+          gtag('config', 'AW-17554511136');
+          gtag('config', 'AW-17554415633');
+          gtag('config', 'AW-17550081000');
         `}
       </Script>
       {/* --- Google Ads Tags END --- */}
