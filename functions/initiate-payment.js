@@ -1,10 +1,10 @@
 // Working Netlify function to initiate payment - copied from genesis project
 const axios = require('axios');
 
-// PayHero API credentials (working from genesis project)
-const API_USERNAME = 'LOV1coowH9xMzNtThWjF';
-const API_PASSWORD = 'hAxiS4X7B8KWDO2QjdPa2zdEMn0dFw4JST5n0eoW';
-const CHANNEL_ID = 3146;
+// PayHero API credentials (updated with new account)
+const API_USERNAME = 'egzzAjUCK7gw0pufES1e';
+const API_PASSWORD = 'vEnO5rhCgAf2i9EaHzNGWbKr2wpqhsU7hy3IkGtU';
+const CHANNEL_ID = 3504;
 
 // Generate Basic Auth Token
 const generateBasicAuthToken = () => {
