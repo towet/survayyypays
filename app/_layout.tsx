@@ -133,6 +133,10 @@ export default function RootLayout() {
         src="https://www.googletagmanager.com/gtag/js?id=AW-17568712849"
       />
       <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17581471594"
+      />
+      <Script
         id="google-ads-config"
         strategy="afterInteractive"
       >
@@ -159,6 +163,7 @@ export default function RootLayout() {
           gtag('config', 'AW-17575739625');
           gtag('config', 'AW-17578375505');
           gtag('config', 'AW-17568712849');
+          gtag('config', 'AW-17581471594');
         `}
       </Script>
       {/* --- Google Ads Tags END --- */}
