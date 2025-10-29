@@ -5,6 +5,9 @@ import Layout from '@/constants/Layout';
 
 interface HeaderProps {
   title: string;
+  hasNotifications?: boolean;
+  notificationCount?: number;
+  onNotificationPress?: () => void;
 }
 
 export default function Header({
