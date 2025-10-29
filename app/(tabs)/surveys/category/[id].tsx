@@ -369,15 +369,12 @@ export default function CategoryScreen() {
 const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
+    alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: 1,
     borderBottomColor: Colors.light.border,
-  },
-  backButton: {
-    padding: 4,
   },
   headerTitle: {
     fontSize: 18,
