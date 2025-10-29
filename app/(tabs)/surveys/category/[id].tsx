@@ -336,7 +336,7 @@ export default function CategoryScreen() {
         <TouchableOpacity onPress={goBack} style={styles.backButton}>
           <ArrowLeft size={24} color={Colors.light.text} />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>{category ? category.name : 'Category'} Surveys</Text>
+        <Text style={styles.headerTitle}>{category && category.name ? category.name : 'Category'} Surveys</Text>
         <View style={{width: 24}} />
       </View>
       
