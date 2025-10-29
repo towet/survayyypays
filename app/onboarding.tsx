@@ -37,7 +37,12 @@ export default function OnboardingScreen() {
   const scrollX = useRef(new Animated.Value(0)).current;
   const slidesRef = useRef(null);
 
-  const viewableItemsChanged = useRef(({ viewableItems }) => {
+  interface ViewableInfo {
+    viewableItems: Array<{ index?: number }>;
+    changed: Array<any>;
+  }
+
+  const viewableItemsChanged = useRef(({ viewableItems }: ViewableInfo) => {
     setCurrentIndex(viewableItems[0]?.index || 0);
   }).current;
 
